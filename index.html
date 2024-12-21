@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tables and form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #5c0c92;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        .bg-primary {
+            background-color: #ee05ee;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        .table-bordered th {
+            background-color: #d85433;
+            color: white;
+        }
+
+        .table-bordered td {
+            background-color: #e9ecef;
+        }
+
+        .table th, .table td {
+            vertical-align: middle;
+            padding: 12px 15px;
+        }
+
+        .table-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-label {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .form-select {
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .btn-primary {
+            background-color: #0b121a;
+            border-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa;
+        }
+
+        .rounded {
+            border-radius: 8px;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .highlighted-row {
+            background-color: #f512b1;
+        }
+
+        .bg-light-custom {
+            background-color: #e2f0ff;
+        }
+
+        .p-4-custom {
+            padding: 25px;
+        }
+
+        .text-center-custom {
+            text-align: center;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="bg-danger p-4 text-center-custom rounded">
+            <h1>Victor Santa's List</h1>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="table-container p-4">
+                    <h2 class="section-title">Premium List 1</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Gender</th>
+                                <th>Gift</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dzifa </td>
+                                <td>0544002001</td>
+                                <td>Female</td>
+                                <td>G-Wagon</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td>Felicity </td>
+                                <td>0556794180</td>
+                                <td>Female</td>
+                                <td>Iphone 16</td>
+                            </tr>
+                            <tr>
+                                <td>Cecilia</td>
+                                <td>0555800900</td>
+                                <td>Female</td>
+                                <td>Tesla Cybertruck</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td>Victoria</td>
+                                <td>0556919233</td>
+                                <td>Female</td>
+                                <td>42" Plasma TV</td>
+                            </tr>
+                            <tr>
+                                <td>Makafui</td>
+                                <td>0562400500</td>
+                                <td>Female</td>
+                                <td>PS5</td>
+                            </tr>
+                            <tr>
+                                <td>Harriet</td>
+                                <td>0562500700</td>
+                                <td>Female</td>
+                                <td>10TB SSD</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="table-container p-4">
+                    <h2 class="section-title">Premium List 2</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Gender</th>
+                                <th>Gift</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Enam</td>
+                                <td>0562500100</td>
+                                <td>Female</td>
+                                <td>Dell Alienware M16</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td>Deli</td>
+                                <td>0562500300</td>
+                                <td>Female</td>
+                                <td>10TB SSD</td>
+                            </tr>
+                            <tr>
+                                <td>Susan</td>
+                                <td>0562500400</td>
+                                <td>Female</td>
+                                <td>MacBook Pro</td>
+                            </tr>
+                            <tr class="highlighted-row">
+                                <td>Priscilla</td>
+                                <td>0562100900</td>
+                                <td>Female</td>
+                                <td>MacBook Pro</td>
+                            </tr>
+                            <tr>
+                                <td>Abigail</td>
+                                <td>0562200900</td>
+                                <td>Female</td>
+                                <td>G-Wagon</td>
+                            </tr>
+                            <tr>
+                                <td>Lee</td>
+                                <td>0562600900</td>
+                                <td>Female</td>
+                                <td>Iphone 16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container my-4">
+        <div class="bg-primary p-4 text-center-custom rounded">
+            <h2>Something Small For The Boys</h2>
+            </div>
+            
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Gender</th>
+                            <th>Gift</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Samuel</td>
+                            <td>0562600900</td>
+                            <td>Male</td>
+                            <td>Bicycle</td>
+                        </tr>
+                        <tr class="highlighted-row">
+                            <td>Kelvin</td>
+                            <td>0562000900</td>
+                            <td>Male</td>
+                            <td>2GB Pendrive</td>
+                        </tr>
+                        <tr>
+                            <td>Kekeli</td>
+                            <td>0562800900</td>
+                            <td>Male</td>
+                            <td>A4 Sheet Bundle</td>
+                        </tr>
+                        <tr class="highlighted-row">
+                            <td>Mish</td>
+                            <td>0566500900</td>
+                            <td>Male</td>
+                            <td>1TB External</td>
+                        </tr>
+                        <tr>
+                            <td>Charles</td>
+                            <td>0562900900</td>
+                            <td>Male</td>
+                            <td>Chess Board</td>
+                        </tr>
+                        <tr>
+                            <td>Ransford</td>
+                            <td>056200900</td>
+                            <td>Male</td>
+                            <td>G-shock</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>  
+
+        <div class="container my-4">
+            <div class="bg-primary p-4 text-center-custom rounded">
+                <h2>Also Want A Gift from Victor Santa! Fill the Form </h2>
+                </div>
+        <div class="container my-4">
+            <div class="table-container p-4">
+                    <form action="#" method="post">
+                        <fieldset class="border p-3">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" id="name" name="Name" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone1" class="form-label">Phone Number:</label>
+                                <input type="number1" id="phone" name="Phone1" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Gift I Want</label>
+                                <input type="text" id="gift" name="gift" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Gender:</label>
+                                <br>
+                                <input type="radio" name="Gender" value="Male" id="male">
+                                <label for="male">Male</label>
+                                <br>
+                                <input type="radio" name="Gender" value="Female" id="female">
+                                <label for="female">Female</label>                               
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
